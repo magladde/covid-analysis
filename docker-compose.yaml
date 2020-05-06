@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  covid:
+    build:
+      context: .
+    image: covid-analysis
+    volumes:
+      - D:\covid-19-data:/data
+    tty: true
+    stdin_open: true
